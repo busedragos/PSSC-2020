@@ -1,0 +1,20 @@
+Bounded context : "Context intrebare "
+	Workflow: " Publicare intrebare "
+		Triggered by: " Cererea publicarii intrebarii primita "
+		Input: " Intrebarea utilizatorului "
+		Output: "Acceptare intrebare, respingere intrebare sau analizare manuala"
+//step1
+	Validare intrebare
+         If intrebare is valid then
+               return "Acceptare intrebare" 
+         else if intrebare is invalid then
+               return "Respingere intrebare"
+         else 
+               stop
+		
+//step2 
+	Verificare rezultat validare
+//step3
+        Acceptare intrebare
+//step4
+	return "Intrebare publicata"
